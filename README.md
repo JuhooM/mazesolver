@@ -9,6 +9,8 @@ Goal: Make e-puck robot able to solve different kind of mazes
 
 Time reserved: 50h per member
 
+Due date: Friday 8.12.2023, according course moodle
+
 Project supervisors: Dr. Ilkka Jormanainen, Dr. Samuel Tewelde Yigzaw
 
 TODO: 
