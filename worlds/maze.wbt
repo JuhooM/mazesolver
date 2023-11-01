@@ -220,4 +220,5 @@ Wall {
 E-puck {
   translation -0.44 0.44 0
   rotation 0 0 -1 1.5708
+  controller "maze"
 }
