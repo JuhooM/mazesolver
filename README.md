@@ -30,5 +30,5 @@ Project journal:
 
   //1.11.2023 	
 
-  Added controller for the e-puck to use named maze. It only has setup done and no maze solving function, insted only goes straight max speed.
+  Added controller for the e-puck to use, named maze. It only has setup done and no maze solving function, insted only goes straight max speed.
   Also thought how to implement the robot to move in the maze regarding the 16.10 plan. Still no idea.
