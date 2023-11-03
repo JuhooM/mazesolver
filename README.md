@@ -26,4 +26,9 @@ Project journal:
   This is projectwork for Robotics course. Goal of this project is to make e-puck robot able to solve mazes.
   We will discuss with project members how we will implement the function to solve mazes.
   Initial plan was to make the robot use Breadth-first search(bfs) and map the maze junctions as vertexes and make edges between vertexes that are connected in the maze.
-  Also added base files for webot program. There is 1 world with easy maze and unedited e-puck controller.
+  Also added base files for webot program. There is 1 world with easy maze.
+
+  //1.11.2023 	
+
+  Added controller for the e-puck to use, named maze. It only has setup done and no maze solving function, insted only goes straight max speed.
+  Also thought how to implement the robot to move in the maze regarding the 16.10 plan. Still no idea.
