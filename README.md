@@ -17,7 +17,9 @@ TODO:
 
   1) Make e-puck controller that can traverse a maze and not get stuck.
   2) Make e-puck controler able to create a graph of the maza that it traverses
-  3) Add more worlds/mazes for the robot to solve
+  3) Make bsf algorithm to solve the graph
+  4) Make the robot use the solved path
+  5) Add more worlds/mazes for the robot to solve
 
 Project journal:
 
