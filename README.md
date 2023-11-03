@@ -16,10 +16,11 @@ Project supervisors: Dr. Ilkka Jormanainen, Dr. Samuel Tewelde Yigzaw
 TODO: 
 
   1) Make e-puck controller that can traverse a maze and not get stuck.
-  2) Make e-puck controler able to create a graph of the maza that it traverses
-  3) Make bsf algorithm to solve the graph
-  4) Make the robot use the solved path
-  5) Add more worlds/mazes for the robot to solve
+     	Able to follow left wall and traverse through the maze
+  3) Make e-puck controler able to create a graph of the maza that it traverses
+  4) Make bsf algorithm to solve the graph
+  5) Make the robot use the solved path
+  6) Add more worlds/mazes for the robot to solve
 
 Project journal:
 
