@@ -1,7 +1,7 @@
 # mazesolver
 Title: Maze solving robot with webots
 
-Project members: Juho Matilainen,
+Project members: Juho Matilainen
 
 Project leader: Juho Matilainen
 
@@ -32,3 +32,8 @@ Project journal:
 
   Added controller for the e-puck to use, named maze. It only has setup done and no maze solving function, insted only goes straight max speed.
   Also thought how to implement the robot to move in the maze regarding the 16.10 plan. Still no idea.
+
+  //3.11.2023
+
+  Added fall following maze solve for perfect mazes, it doesn't work for example if maze has a loop. Since I am working alone and couldn't figure out how to implement bfs I think it would take too much time.
+  If I get wallfollow to work I will use remaning time to implement bfs.
