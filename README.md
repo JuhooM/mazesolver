@@ -35,5 +35,5 @@ Project journal:
 
   //3.11.2023
 
-  Added fall following maze solve for perfect mazes, it doesn't work for example if maze has a loop. Since I am working alone and couldn't figure out how to implement bfs I think it would take too much time.
+  Added fall following maze solve for perfect mazes, it doesn't work for example if maze has a loop. Since I am working alone and couldn't figure out how to implement bfs, also I think it would take too much time.
   If I get wallfollow to work I will use remaning time to implement bfs.
