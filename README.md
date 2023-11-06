@@ -14,23 +14,22 @@ Due date: Friday 8.12.2023, according course moodle
 Project supervisors: Dr. Ilkka Jormanainen, Dr. Samuel Tewelde Yigzaw
 
 Concept Plan- refers to the robotics project you want to implement or demonstrate. It answers the questions:
-'
+
     why you chose the topic: Because it seemed interesting
     what functionalities you want to implement in the project: I want e-puck robot to be able to solve mazes
     what you want to demonstrate by the end of your project: E-puck robot solving mazes
     how you think the project will be feasible for development: 
 
 Technical Plan- includes:
-'
-    the list of tools you need to use to implement the project and modify as considered in the concept plan (hardware and software tools, programming language, etc): Webots and computer supporting it.
-    the implementation sequence / procedure so that you can mention how to start the project implementation and what to do first until the mid-project presentation period. Then the technical implementation plans until the end of the project.: b4 midway I hope that E-puck robot is able to traverse mazes and at the end completely solve them.
+
+    the list of tools you need to use to implement the project: Webots 2023b and computer able to run it.
+    Time plan: b4 midway I hope that E-puck robot is able to traverse mazes and at the end completely solve them. More in TODO.
 
 TODO: 
 
-  1) Make e-puck controller that can traverse a maze and not get stuck.
-  3) Make e-puck controler able to create a graph of the maza that it traverses
-  4) Make bsf algorithm to solve the graph
-  5) Make the robot use the solved path
+  1) Make movement for e-puck controller
+  2) Make e-puck robot able to traverse mazes without getting stuck
+  3) Somehow solve the maze. (bfs?)
   6) Add more worlds/mazes for the robot to solve
 
 Project journal:
