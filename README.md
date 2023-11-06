@@ -39,3 +39,15 @@ Project journal:
 
   Added fall following maze solve for perfect mazes, it doesn't work for example if maze has a loop. Since I am working alone and couldn't figure out how to implement bfs, also I think it would take too much time.
   If I get wallfollow to work I will use remaning time to implement bfs.
+  
+  //4.11.2023
+
+  Started making movement functions for robot, plan on using them for betterwall following first. Then figure out how to implement bfs.
+  
+  //5.11.2023
+
+  Done with forward movement function. It will move robot forward wanted distance in meters. Turn left/right still unfinished.
+  
+  //6.11.2023
+
+  Finished all movement functions, but for some reason turns are not accurate. When turning pi/2 it will only turn like 5pi/12. When inputin values if wanted turn 100deg it seems to be close to pi/2.
