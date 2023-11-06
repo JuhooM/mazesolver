@@ -9,7 +9,7 @@ timeStep = int(robot.getBasicTimeStep())
 
 # constants
 MAX_SPEED = 6.28 # maximum speed of robot
-SENSOR_THRESHOLD = 80 # sensitivity of sensors surrounding robot for obstacle detection
+SENSOR_THRESHOLD = 90 # sensitivity of sensors surrounding robot for obstacle detection
 UNIT_SIZE = 0.125 # size of 1 maze node in mmeters
 WHEEL_RADIUS = 0.0205 # radius of robots wheel in mmeters
 AXLE_LENGTH = 0.052 # lenght of the robots axle of wheels in mmeters
@@ -44,24 +44,29 @@ for i in range(8):
 # return distance travelled of wheels from previous function call to current time, also update dirvec, par turn true if you are turning otherwise false
 def disTravelled(turn: bool):
         # update position of wheels
-        pos[0] = left_position_sensor.getValue()
-        pos[1] = right_position_sensor.getValue()
+        pos[0] = abs(left_position_sensor.getValue())
+        pos[1] = abs(right_position_sensor.getValue())
         
         # calculate distance travelled from previous values
-        distance1 = abs(pos[0] * WHEEL_RADIUS - dis[0])
-        distance2 = abs(pos[1] * WHEEL_RADIUS - dis[1])
-        avgdist = (distance1+distance2)/2
+        distance1 = pos[0] * WHEEL_RADIUS - dis[0]
+        distance2 = pos[1] * WHEEL_RADIUS - dis[1]
+        avgdist = (abs(distance1)+abs(distance2))/2
 
         # update distance travelled in meters
         dis[0] = pos[0] * WHEEL_RADIUS
         dis[1] = pos[1] * WHEEL_RADIUS
         
         # update dirvec
-        if not turn:
+        if turn:
+            if distance1 < 0 or distance2 < 0:
+                if distance1 <= 0:
+                    dirvec[2] += (abs(distance1) + abs(distance2))/AXLE_LENGTH;
+                else:
+                    dirvec[2] -= (abs(distance1) + abs(distance2))/AXLE_LENGTH;
+        else:
             dirvec[0] += avgdist * math.cos(dirvec[2])
             dirvec[1] += avgdist * math.sin(dirvec[2])
-        else:
-            dirvec[2] += (2*avgdist)/AXLE_LENGTH;
+                
         
         print('Robots position [x-axis, y-axis, orientation]')
         print(dirvec)
@@ -82,13 +87,12 @@ def turn_right(turn_amount_deg):
     # set right wheel speed
     vel[1] = -MAX_SPEED/10
     setSpeed()
-
+    
     # turn right wanted amount
-    goal = turn_amount_deg/360 * 2 * math.pi + dirvec[2]
-    travelled = 0
+    goal = dirvec[2] - turn_amount_deg/360 * 2 * math.pi
     while robot.step(timeStep) != -1:
-        travelled += disTravelled(True)
-        if pow(goal-dirvec[2], 2) < 0.00001:
+        disTravelled(True)
+        if pow(goal-dirvec[2], 2) < 0.00004:
             break
 
 # turn left turn_amount degrees
@@ -101,11 +105,10 @@ def turn_left(turn_amount_deg):
     setSpeed()
 
     # turn left wanted amount
-    goal = turn_amount_deg/360 * 2 * math.pi + dirvec[2]
-    travelled = 0
+    goal = dirvec[2] + turn_amount_deg/360 * 2 * math.pi
     while robot.step(timeStep) != -1:
-        travelled += disTravelled(True)
-        if pow(goal-dirvec[2], 2) < 0.00001:
+        disTravelled(True)
+        if pow(goal-dirvec[2], 2) < 0.00004:
             break
 
 # go forward distance in meters
