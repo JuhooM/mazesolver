@@ -23,7 +23,7 @@ Concept Plan- refers to the robotics project you want to implement or demonstrat
 Technical Plan- includes:
 
     the list of tools you need to use to implement the project: Webots 2023b and computer able to run it.
-    Time plan: b4 midway I hope that E-puck robot is able to traverse mazes and at the end completely solve them. More in TODO.
+    plan: b4 midway I hope that E-puck robot is able to traverse mazes and at the end completely solve them. More in TODO.
 
 TODO: 
 
