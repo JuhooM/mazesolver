@@ -207,13 +207,3 @@ def wallfollowSolve():
 while robot.step(timeStep) != -1:
     #wallfollowSolve()
     betterwallfollowSolve()
-    
-    # Set motor vel
-    delay(10)
-    left_motor.setVelocity(left_speed)
-    right_motor.setVelocity(right_speed)
-
-# main loop for robot functions
-while robot.step(timeStep) != -1:
-    #wallfollowSolve()
-    betterwallfollowSolve()
