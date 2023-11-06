@@ -14,12 +14,14 @@ Due date: Friday 8.12.2023, according course moodle
 Project supervisors: Dr. Ilkka Jormanainen, Dr. Samuel Tewelde Yigzaw
 
 Concept Plan- refers to the robotics project you want to implement or demonstrate. It answers the questions:
+
     why you chose the topic: Because it seemed interesting
     what functionalities you want to implement in the project: I want e-puck robot to be able to solve mazes
     what you want to demonstrate by the end of your project: E-puck robot solving mazes
     how you think the project will be feasible for development: 
 
 Technical Plan- includes:
+
     the list of tools you need to use to implement the project and modify as considered in the concept plan (hardware and software tools, programming language, etc): Webots and computer supporting it.
     the implementation sequence / procedure so that you can mention how to start the project implementation and what to do first until the mid-project presentation period. Then the technical implementation plans until the end of the project.: b4 midway I hope that E-puck robot is able to traverse mazes and at the end completely solve them.
 
