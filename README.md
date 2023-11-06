@@ -50,4 +50,4 @@ Project journal:
   
   //6.11.2023
 
-  Finished all movement functions, but for some reason turns are not accurate. When turning pi/2 it will only turn like 5pi/12. When inputin values if wanted turn 100deg it seems to be close to pi/2.
+  Finished all movement functions, but for some reason turns are not accurate. When turning pi/2 it will only turn like 5pi/12. If turn input value 100deg it seems to be close to pi/2. Needs fixing
