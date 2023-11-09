@@ -62,3 +62,7 @@ Project journal:
   //6.11.2023
 
   Finished all movement functions, but for some reason turns are not accurate. When turning pi/2 it will only turn like 5pi/12. If turn input value 100deg it seems to be close to pi/2. Needs fixing.
+
+  //9.11.2023
+
+  All movement functions work now. Added movement correcting functions for accurate travel. Better wall following maze solving function works now, with the use of previously mentioned movement functions. Still encounters bugs where world couldnt be calculated and then gets stuck, or movement fails and robot will travel wrong direction.
