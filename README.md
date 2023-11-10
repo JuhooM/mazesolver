@@ -66,3 +66,7 @@ Project journal:
   //9.11.2023
 
   All movement functions work now. Added movement correcting functions for accurate travel. Better wall following maze solving function works now, with the use of previously mentioned movement functions. Still encounters bugs where world couldnt be calculated and then gets stuck, or movement fails and robot will travel wrong direction.
+
+  //10.11.2023
+
+  Made movement functions better, fixed some bugs and added ground sensor for robot to stop when reach dark ground that is the goal. This will be the version for while, since I have other things to do.
