@@ -27,10 +27,8 @@ Technical Plan- includes:
 
 TODO: 
 
-  1) Make movement for e-puck controller
-  2) Make e-puck robot able to traverse mazes without getting stuck
-  3) Somehow solve the maze. (bfs?)
-  6) Add more worlds/mazes for the robot to solve
+  1) Somehow solve the maze, other than wall following. (bfs, dfs, a*)
+  2) Add more worlds/mazes for the robot to solve
 
 Project journal:
 
@@ -69,4 +67,8 @@ Project journal:
 
   //10.11.2023
 
-  Made movement functions better, fixed some bugs and added ground sensor for robot to stop when reach dark ground that is the goal. This will be the version for while, since I have other things to do.
+  Made movement functions better, fixed some bugs and added ground sensor for robot to stop when reach dark ground that is the goal. This will be the final version for while, since I have other things to do.
+
+  //24.11.2023
+
+  The robot will follow left wall to solve the maze and stop at dark area using ground sensor. For traveling robot will use pid correction to travel straight, when robot encounters wall ahead it will correct itself according to the wall infront. All the movement functions work well. Project still missing the implementation of more functional maze solving algorithm for example bfs. For the bfs need to add area mapping for example with a graph and solve the maze with it. BUGS. sometimes the world encounter problem where it couldn't be calculated and then the robot does weird movements. For this I couldn't figure out solution, only changing the robots starting position and timestep values seemed to help.
