@@ -27,8 +27,9 @@ Technical Plan- includes:
 
 TODO: 
 
-  1) Somehow solve the maze, other than wall following. (bfs, dfs, a*)
-  2) Add more worlds/mazes for the robot to solve
+  1) Fix wourld couldn't be calculated bug/problem
+  2) Somehow solve the maze, other than wall following. (bfs, dfs, a*)
+  3) Add more worlds/mazes for the robot to solve
 
 Project journal:
 
