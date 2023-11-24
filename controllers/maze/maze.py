@@ -301,7 +301,7 @@ def wallfollowSolve():
         else:
             updateVector()
             turn_right(90)
-    print(gs.getValue()) 
+
     # reached goal (dark floor)       
     if gs.getValue() < 400:
         updateVector()
